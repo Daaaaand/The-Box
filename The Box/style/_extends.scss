@@ -1,0 +1,34 @@
+@import "variables";
+/** Extends **/
+
+%flex {
+    display: flex;
+    justify-content: center;
+}
+
+%body {
+    background-color: $blanco;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+
+%a {
+    text-decoration: none;
+}
+
+%img {
+    max-width: 100%;
+}
+
+%footer {
+    background-color: $primarioOscuro;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+%footer__texto {
+    font-family: $fuentePrincipal;
+    text-align: center;
+    font-size: 1.5rem;
+}

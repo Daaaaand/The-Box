@@ -1,0 +1,136 @@
+@import "variables";
+
+/* HEAD ANIMACION */
+.main__cliente{
+    background-color: $primario;
+    .content {
+        @extend %flex;
+        font-size:5rem;
+        line-height:40px;
+        color:#ecf0f1;
+        height:40px;
+        top:50%;
+        left:50%;
+        font-family: $fuentePrincipal;
+        padding-top: 10rem;
+        padding-bottom: 20rem;
+        background-color: $primario;
+    }
+}
+
+.li__tricking, .li__parkour {
+    color:$secundario;
+    font-weight:bold;
+}
+
+.visible {
+    float:left;
+    font-weight:300;
+    overflow:hidden;
+    height:4rem;   
+}
+
+.ul__animacion {
+    margin-top:0;
+    padding-left:26rem;
+    list-style:none;
+    animation:5.3s linear 0s normal none infinite change;
+    -webkit-animation:5.3s linear 0s normal none infinite change;
+    -moz-animation:5.3s linear 0s normal none infinite change;
+    -o-animation:5.3s linear 0s normal none infinite change;
+}
+
+.ul__animacionl, .li__tricking, .li__parkour {
+    line-height:40px;
+    margin:0;
+}
+
+@-webkit-keyframes opacity {
+    0%   {opacity:0;}
+    50%  {opacity:1;}
+    100% {opacity:0;}
+}
+@keyframes opacity {
+    0%   {opacity:0;}
+    50%  {opacity:1;}
+    100% {opacity:0;}
+}
+
+@-webkit-keyframes change {
+    0%   {margin-top:0;}
+    15%  {margin-top:0;}
+    25%  {margin-top:-40px;}
+    40%  {margin-top:-40px;}
+    50%  {margin-top:-80px;}
+    65%  {margin-top:-80px;}
+    75%  {margin-top:-40px;}
+    85%  {margin-top:-40px;}
+    100% {margin-top:0;}
+}
+@keyframes change {
+    0%   {margin-top:0;}
+    15%  {margin-top:0;}
+    25%  {margin-top:-40px;}
+    40%  {margin-top:-40px;}
+    50%  {margin-top:-80px;}
+    65%  {margin-top:-80px;}
+    75%  {margin-top:-40px;}
+    85%  {margin-top:-40px;}
+    100% {margin-top:0;}
+}
+
+/* ----------------------------------------------- */
+
+/* consulta */
+.Consulta__Cliente{
+    background-color: $primario;
+    .h1__cliente{
+        @extend %flex;
+        color: $blanco;
+    }
+    .form__cliente{
+        @extend %flex;
+        margin-bottom: 2rem;
+    }
+}
+
+.img {
+    object-fit: cover
+}
+
+.tabla__cliente {
+    background-color: $secundario;
+    margin-bottom: 10rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 300px;
+    
+    tr, td{
+        color: $blanco;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tabla__cliente {
+        width: 100px;
+        tr, td{
+            color: $blanco;
+            font-size: 1.5rem;
+        }
+    }
+}
+/* ----------------------------------------------- */
+
+/* FOOTER */
+.p__footer {
+
+    padding-top: 20rem;
+    font-size: 1.4rem;
+    @extend %flex;
+    color: $blanco;
+    background-color: $negro;
+}
+/* ----------------------------------------------- */

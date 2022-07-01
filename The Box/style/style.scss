@@ -1,0 +1,35 @@
+// Imports
+@import "login";
+@import "variables";
+@import "extends";
+@import "cliente";
+@import "usuarios";
+@import "encomienda";
+
+/** Box **/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+    /** Globales **/
+body {
+    @extend %body;
+    a{
+        @extend %a;
+    }
+    img{
+        @extend %img;
+    }
+}
+
+/** Footer**/
+.footer {
+    @extend %footer;
+    .footer__texto {
+        @extend %footer__texto;
+    }
+}

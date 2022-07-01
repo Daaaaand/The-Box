@@ -1,0 +1,25 @@
+//Imports
+
+@import "variables";
+
+.padre__encomienda{
+    @extend %flex;
+    width: 50rem;
+    background-color: $primario;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 5rem;
+    .alta__encomienda, .baja__encomienda{
+        h1{
+            color: $blanco;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .padre__encomienda{
+        display: block;
+        width: 25rem;
+    }
+}
