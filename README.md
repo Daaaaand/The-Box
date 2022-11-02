@@ -6,7 +6,7 @@
 	Integrantes:
 	 __________________________
 	|	                   |		
-	|+ Ezequiel Villaba	   |		
+	|+ Ezequiel Villalba	   |		
 	|+ 56350574		   |		
 	|__________________________|		
 
